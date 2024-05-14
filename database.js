@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = PROCESS.secret;
+const URI = PROCESS.env.secret;
 
 mongoose.connect(URI)
     .then(db => console.log('DB connected'))
